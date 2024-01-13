@@ -1,0 +1,15 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+svg,
+iframe,
+video {
+  max-inline-size: 100%;
+  block-size: auto;
+}/*# sourceMappingURL=global.css.map */
