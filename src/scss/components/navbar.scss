@@ -95,7 +95,7 @@
             background-color: var(--clr-primary);
             font-family: $fontf;
             font-weight: $fw-800;
-            font-size: 18px;
+            font-size: 1.125rem;
             color: var(--clr-white);
             padding: 25px 40px;
         }
@@ -116,6 +116,36 @@
 
         margin-block-start: 0.9375rem;
         margin-block-end: 2.5rem;
+    }
+
+    @include breakpoint (medium) {
+       
+        display: flex;
+        flex-direction: row-reverse;
+
+        &__img {
+            background-image: url(../../assets/tablet/image-hero.jpg);
+            height: 606px;
+            background-size: contain;
+        }
+
+        &__text {
+            padding-block-start: 60px;
+            margin-inline-start: 2.4375rem;
+           
+        }
+
+        &__title {
+            line-height: 3.5rem;
+            
+        }
+
+        &__paragraph {
+            margin-block-start: 1.1875rem;
+            margin-block-end: 2rem;
+        }
+
+       
     }
 
 
