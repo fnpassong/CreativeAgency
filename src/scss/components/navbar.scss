@@ -2,11 +2,14 @@
 
 .hdr {
     
-    @include flex(space-between, center, row);
-    
-    margin-inline: 1.5rem;
-    margin-block-start: 4.625rem;
-  
+    &__wrapper {
+
+        @include flex(space-between, center, row);
+        
+        margin-inline: 1.5rem;
+        margin-block-start: 4.625rem;
+      
+    }
     
 
     &__nav {
@@ -15,8 +18,12 @@
 
     @include breakpoint(medium) {
 
-        margin-block-start: 0rem;
-        margin-inline-end: 0rem;
+        &__wrapper {
+            margin-block-start: 0rem;
+            margin-inline-end: 0rem;
+
+        }
+
          
         &__nav {
             

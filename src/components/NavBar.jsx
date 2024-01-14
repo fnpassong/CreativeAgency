@@ -14,20 +14,27 @@ export const NavBar = () => {
 
   return (
     <header className="hdr">
-      <div className="hdr__logo">
-        <Link to='/'>
-          <img src={logo} alt="" />
-        </Link>
+      <div className='hdr__wrapper'>
+        <div className="hdr__logo">
+          <Link to='/'>
+            <img src={logo} alt="" />
+          </Link>
+        </div>
+        <nav className="hdr__nav">
+          <Link to= '/about'>about</Link>
+          <Link to='/service'>service</Link>
+          <Link to='/project'>project</Link>
+          <Link> <Boton texto = {textoBoton.txt1}/> </Link>
+        </nav>
+        <div className="hdr__ham">
+          <img src={hamLogo} alt="" />
+        </div>
       </div>
-      <nav className="hdr__nav">
-        <Link to= '/about'>about</Link>
-        <Link to='/service'>service</Link>
-        <Link to='/project'>project</Link>
-        <Link> <Boton texto = {textoBoton.txt1}/> </Link>
-      </nav>
-      <div className="hdr__ham">
-        <img src={hamLogo} alt="" />
+
+      <div className="hero">
+        <div className="hero__img"></div>
       </div>
+
     </header>
   )
 }
