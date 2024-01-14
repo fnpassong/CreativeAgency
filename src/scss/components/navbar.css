@@ -58,4 +58,12 @@
   .hdr__ham {
     display: none;
   }
+}
+
+.hero__img {
+  min-width: 23.4375rem;
+  min-height: 12.5rem;
+  background-image: url(../../assets/mobile/image-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }/*# sourceMappingURL=navbar.css.map */

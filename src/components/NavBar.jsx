@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import logo from '../assets/desktop/logo.svg';
 import hamLogo from '../assets/mobile/icon-hamburger.svg';
-import hero from '../assets/mobile/image-hero.jpg';
 import { Boton } from './common/Boton';
 
 import '../scss/components/navbar.scss';
@@ -34,6 +33,16 @@ export const NavBar = () => {
 
       <div className="hero">
         <div className="hero__img"></div>
+        <div className="hero__text">
+          <h1 className="hero__title">
+            Branding &
+            website design agency   
+          </h1>
+          <p className="hero__paragraph">
+            We specialize in visual storytelling by creating cohesive brand and website design solutions for small businesses, giving lasting impressions to audiences in a digital world.
+          </p>
+          <Boton texto={textoBoton.txt2}/>
+        </div>
       </div>
 
     </header>
