@@ -11,15 +11,16 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  margin-inline-start: 24px;
-  margin-block-start: 74px;
+  margin-inline: 1.5rem;
+  margin-block-start: 4.625rem;
 }
 .hdr__nav {
   display: none;
 }
 @media ((min-width: 48rem) and (max-width: 990px)) {
   .hdr {
-    margin-block-start: 0px;
+    margin-block-start: 0rem;
+    margin-inline-end: 0rem;
   }
   .hdr__nav {
     display: flex;
@@ -42,6 +43,7 @@
     font-family: "Commissioner", sans-serif;
     margin-inline-start: 1.125rem;
     font-size: 1rem;
+    font-weight: 800;
   }
   .hdr__nav > a {
     text-decoration: none;
@@ -51,7 +53,7 @@
     font-family: "Commissioner", sans-serif;
     line-height: 2rem;
     color: var(--clr-white);
-    padding-block: 73px;
+    padding-block: 4.5625rem;
   }
   .hdr__ham {
     display: none;

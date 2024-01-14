@@ -4,8 +4,8 @@
     
     @include flex(space-between, center, row);
     
-    margin-inline-start: 24px;
-    margin-block-start: 74px;
+    margin-inline: 1.5rem;
+    margin-block-start: 4.625rem;
   
     
 
@@ -15,7 +15,8 @@
 
     @include breakpoint(medium) {
 
-        margin-block-start: 0px;
+        margin-block-start: 0rem;
+        margin-inline-end: 0rem;
          
         &__nav {
             
@@ -40,6 +41,7 @@
             font-family: $fontf;
             margin-inline-start: 1.125rem;
             font-size: 1rem;
+            font-weight: $fw-800;
            
         }
          
@@ -52,7 +54,7 @@
             line-height: 2rem;
             color: var(--clr-white);
 
-            padding-block: 73px;
+            padding-block: 4.5625rem;
 
         }
         
