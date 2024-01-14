@@ -1,7 +1,12 @@
+import { Numbers } from '../components/Numbers'
 import { Strategic } from '../components/Strategic'
 
 export const Home = () => {
   return (
-    <Strategic/>
+    <>
+      <Strategic/>
+      <Numbers/>
+    
+    </>
   )
 }
