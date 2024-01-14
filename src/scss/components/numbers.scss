@@ -1,0 +1,60 @@
+@use '../abstract/'as *;
+
+.numbers {
+
+    background-color: var(--clr-primary);
+    padding-block-end: 6rem;
+
+    &__wrapper {
+        margin-inline: 1.5rem;
+        font-family: $fontf;
+    }
+
+    &__title {
+        text-align: left;
+        padding-block-start: 6rem;
+        padding-block-end: 3.0625rem;
+        color: var(--clr-white);
+        text-wrap: stable;
+
+        font-size: 2rem;
+        font-weight: $fw-800;
+        line-height: 2.5rem;
+    }
+
+    &__card + &__card {
+        margin-block-start: 2.5rem;
+    }
+
+    &__code {
+        position: relative;
+    }
+
+    &__id {
+        font-size: 5rem;
+        line-height: 5.5rem;
+        color: var(--clr-white);
+        opacity: 0.25;
+    }
+
+    &__sub {
+        position: absolute;
+        top: 2rem;
+        left: 1rem;
+        font-size: 0.9375rem;
+        font-weight: $fw-800;
+        color: var(--clr-white);
+    }
+
+    &__paragraph {
+        color: var(--clr-white);
+        margin-block-start: 0.9375rem;
+        font-size: 0.9375rem;
+        line-height: 1.5625rem;
+
+        margin-inline-start: 1.25rem;
+    }
+ 
+    
+
+}
