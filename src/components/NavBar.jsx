@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import logo from '../assets/desktop/logo.svg';
 import hamLogo from '../assets/mobile/icon-hamburger.svg';
+import hero from '../assets/mobile/image-hero.jpg';
 import { Boton } from './common/Boton';
 
 import '../scss/components/navbar.scss';
