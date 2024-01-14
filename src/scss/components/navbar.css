@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;800&display=swap");
+:root {
+  --clr-primary: hsl(0, 93%, 64%);
+  --clr-bgBlack: hsl(240, 14%, 11%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-txtBlack: hsl(0, 0%, 0%);
+}
+
+.hdr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-inline-start: 24px;
+  margin-block-start: 74px;
+}
+.hdr__nav {
+  display: none;
+}
+@media ((min-width: 48rem) and (max-width: 990px)) {
+  .hdr {
+    margin-block-start: 0px;
+  }
+  .hdr__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: var(--clr-primary);
+    max-height: 438px;
+    padding-inline-start: 33px;
+    padding-inline-end: 40px;
+  }
+  .hdr__nav a + a:not(:nth-child(4)) {
+    margin-inline-start: 22px;
+  }
+  .hdr a > button {
+    border: none;
+    background-color: var(--clr-bgBlack);
+    color: var(--clr-white);
+    padding: 1.4375rem 1.125rem;
+    font-family: "Commissioner", sans-serif;
+    margin-inline-start: 1.125rem;
+    font-size: 1rem;
+  }
+  .hdr__nav > a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    font-family: "Commissioner", sans-serif;
+    line-height: 2rem;
+    color: var(--clr-white);
+    padding-block: 73px;
+  }
+  .hdr__ham {
+    display: none;
+  }
+}/*# sourceMappingURL=navbar.css.map */

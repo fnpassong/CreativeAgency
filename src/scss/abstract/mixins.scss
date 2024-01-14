@@ -1,3 +1,10 @@
+ 
+
+$breakpoints :(
+    medium: '(min-width: 48rem) and (max-width: 990px)',
+    lg: '(min-width: 992px) and (max-width: 1440px)',
+);
+
 
 
 @mixin flex($justC:center, $aligI: center, $flexD:column) {
@@ -5,4 +12,15 @@
     justify-content: $justC;
     align-items: $aligI;
     flex-direction: $flexD;
+}
+
+@mixin breakpoint($userValue) {
+    $myMap: map-get($breakpoints, $userValue);
+    @if $myMap {
+        @media(#{$myMap}) {
+            @content;
+        }
+    } @else {
+        @error "Opps, no es un breakpoint #{$userValue}"
+    }
 }
