@@ -55,6 +55,26 @@
         margin-inline-start: 1.25rem;
     }
  
-    
+    @include breakpoint(medium) {
+        &__wrapper {
+            display: flex;
+            margin-inline: 0px;
+        }
+
+        &__title {
+            padding-inline-start: 2.4375rem;
+            background-color: white;
+            /* width: 100%; */
+            height: auto;
+            color: var(--clr-txtBlack);
+            width: 17.5625rem;
+            
+            
+        }
+
+        &__paragraph {
+            width:339px ;
+        }
+    }
 
 }

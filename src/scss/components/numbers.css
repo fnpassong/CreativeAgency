@@ -50,4 +50,21 @@
   font-size: 0.9375rem;
   line-height: 1.5625rem;
   margin-inline-start: 1.25rem;
+}
+@media ((min-width: 48rem) and (max-width: 990px)) {
+  .numbers__wrapper {
+    display: flex;
+    margin-inline: 0px;
+  }
+  .numbers__title {
+    padding-inline-start: 2.4375rem;
+    background-color: white;
+    /* width: 100%; */
+    height: auto;
+    color: var(--clr-txtBlack);
+    width: 17.5625rem;
+  }
+  .numbers__paragraph {
+    width: 339px;
+  }
 }/*# sourceMappingURL=numbers.css.map */
