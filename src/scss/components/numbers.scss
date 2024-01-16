@@ -1,80 +1,68 @@
 @use '../abstract/'as *;
 
+
 .numbers {
 
-    background-color: var(--clr-primary);
-    padding-block-end: 6rem;
+    &__leftTitle {
+        display: none;
+    }
 
-    &__wrapper {
+    &__text {
+        
+        background-color: var(--clr-primary);
+        padding-block: 96px;
+    }
+
+    &__title {
+        margin-inline-start: 24px;
+        font-family: $fontf;
+        font-size: 2rem;
+        font-weight: $fw-800;
+        text-wrap: stable;
+        line-height: 2.5rem;
+        color: var(--clr-white);
+    }
+
+    &__card {
         margin-inline: 1.5rem;
         font-family: $fontf;
     }
 
-    &__title {
-        text-align: left;
-        padding-block-start: 6rem;
-        padding-block-end: 3.0625rem;
-        color: var(--clr-white);
-        text-wrap: stable;
-
-        font-size: 2rem;
-        font-weight: $fw-800;
-        line-height: 2.5rem;
-    }
-
-    &__card + &__card {
-        margin-block-start: 2.5rem;
-    }
-
-    &__code {
+    &__numberWrapper {
         position: relative;
     }
 
+    &__sub {
+        position: absolute;
+        top: 1.995rem;
+        left: 0.75rem;
+
+        color: var(--clr-white);
+        font-weight: $fw-800;
+        line-height: 25px;
+    }
+    
     &__id {
         font-size: 5rem;
+        font-weight: $fw-800;
         line-height: 5.5rem;
         color: var(--clr-white);
         opacity: 0.25;
     }
 
-    &__sub {
-        position: absolute;
-        top: 2rem;
-        left: 1rem;
-        font-size: 0.9375rem;
-        font-weight: $fw-800;
-        color: var(--clr-white);
-    }
-
     &__paragraph {
+        width: 311px;
         color: var(--clr-white);
-        margin-block-start: 0.9375rem;
         font-size: 0.9375rem;
-        line-height: 1.5625rem;
-
-        margin-inline-start: 1.25rem;
-    }
- 
-    @include breakpoint(medium) {
-        &__wrapper {
-            display: flex;
-            margin-inline: 0px;
-        }
-
-        &__title {
-            padding-inline-start: 2.4375rem;
-            background-color: white;
-            /* width: 100%; */
-            height: auto;
-            color: var(--clr-txtBlack);
-            width: 17.5625rem;
-            
-            
-        }
-
-        &__paragraph {
-            width:339px ;
-        }
+        font-weight: $fw-400;
+        line-height: 25px;
     }
 
+    &__card + &__card {
+        margin-block-start: 40px;
+    }
+
+    &__card div:first-child {
+        margin-block-start: 49px;
+    }
 }

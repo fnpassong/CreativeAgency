@@ -6,65 +6,54 @@
   --clr-txtBlack: hsl(0, 0%, 0%);
 }
 
-.numbers {
-  background-color: var(--clr-primary);
-  padding-block-end: 6rem;
+.numbers__leftTitle {
+  display: none;
 }
-.numbers__wrapper {
+.numbers__text {
+  background-color: var(--clr-primary);
+  padding-block: 96px;
+}
+.numbers__title {
+  margin-inline-start: 24px;
+  font-family: "Commissioner", sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  text-wrap: stable;
+  line-height: 2.5rem;
+  color: var(--clr-white);
+}
+.numbers__card {
   margin-inline: 1.5rem;
   font-family: "Commissioner", sans-serif;
 }
-.numbers__title {
-  text-align: left;
-  padding-block-start: 6rem;
-  padding-block-end: 3.0625rem;
-  color: var(--clr-white);
-  text-wrap: stable;
-  font-size: 2rem;
-  font-weight: 800;
-  line-height: 2.5rem;
-}
-.numbers__card + .numbers__card {
-  margin-block-start: 2.5rem;
-}
-.numbers__code {
+.numbers__numberWrapper {
   position: relative;
+}
+.numbers__sub {
+  position: absolute;
+  top: 1.995rem;
+  left: 0.75rem;
+  color: var(--clr-white);
+  font-weight: 800;
+  line-height: 25px;
 }
 .numbers__id {
   font-size: 5rem;
+  font-weight: 800;
   line-height: 5.5rem;
   color: var(--clr-white);
   opacity: 0.25;
 }
-.numbers__sub {
-  position: absolute;
-  top: 2rem;
-  left: 1rem;
-  font-size: 0.9375rem;
-  font-weight: 800;
-  color: var(--clr-white);
-}
 .numbers__paragraph {
+  width: 311px;
   color: var(--clr-white);
-  margin-block-start: 0.9375rem;
   font-size: 0.9375rem;
-  line-height: 1.5625rem;
-  margin-inline-start: 1.25rem;
+  font-weight: 400;
+  line-height: 25px;
 }
-@media ((min-width: 48rem) and (max-width: 990px)) {
-  .numbers__wrapper {
-    display: flex;
-    margin-inline: 0px;
-  }
-  .numbers__title {
-    padding-inline-start: 2.4375rem;
-    background-color: white;
-    /* width: 100%; */
-    height: auto;
-    color: var(--clr-txtBlack);
-    width: 17.5625rem;
-  }
-  .numbers__paragraph {
-    width: 339px;
-  }
+.numbers__card + .numbers__card {
+  margin-block-start: 40px;
+}
+.numbers__card div:first-child {
+  margin-block-start: 49px;
 }/*# sourceMappingURL=numbers.css.map */
