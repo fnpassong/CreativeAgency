@@ -52,8 +52,31 @@
   line-height: 25px;
 }
 .numbers__card + .numbers__card {
-  margin-block-start: 40px;
+  margin-block-start: 2.5rem;
 }
 .numbers__card div:first-child {
   margin-block-start: 49px;
+}
+@media ((min-width: 48rem) and (max-width: 990px)) {
+  .numbers__wrapper {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+  .numbers__leftTitle {
+    width: 17.5625rem;
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 40px;
+    margin-inline-start: 2.4375rem;
+    padding-block-start: 10rem;
+    text-wrap: stable;
+  }
+  .numbers__text {
+    margin-block-start: -7rem;
+    z-index: 100;
+  }
+  .numbers__title {
+    display: none;
+  }
 }/*# sourceMappingURL=numbers.css.map */

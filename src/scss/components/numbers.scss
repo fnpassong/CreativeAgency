@@ -59,10 +59,39 @@
     }
 
     &__card + &__card {
-        margin-block-start: 40px;
+        margin-block-start: 2.5rem;
     }
 
     &__card div:first-child {
         margin-block-start: 49px;
+    }
+
+    @include breakpoint(medium) {
+        &__wrapper {
+            display: grid;
+            grid-template-columns: auto 1fr;
+        }
+
+        &__leftTitle {
+            width: 17.5625rem;
+            display: inline-block;
+            font-size: 2rem;
+            font-weight: $fw-800;
+            line-height: 40px;
+            margin-inline-start: 2.4375rem;
+
+            padding-block-start: 10rem;
+
+            text-wrap: stable;
+        }
+
+        &__text {
+            margin-block-start: -7rem;
+            z-index: 100;
+        }
+
+        &__title {
+            display: none;
+        }
     }
 }
