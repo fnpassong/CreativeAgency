@@ -1,4 +1,6 @@
+import { Guides } from '../components/Guides'
 import { Numbers } from '../components/Numbers'
+import { SliderData } from '../components/SliderData'
 import { Strategic } from '../components/Strategic'
 
 export const Home = () => {
@@ -6,6 +8,7 @@ export const Home = () => {
     <>
       <Strategic/>
       <Numbers/>
+      <Guides slides = {SliderData}/>
     
     </>
   )
